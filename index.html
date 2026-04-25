@@ -15,6 +15,15 @@ box-sizing:border-box;
 font-family:Arial,sans-serif;
 }
 
+@keyframes glow{
+from{
+text-shadow: 0 0 5px #ffd54f, 0 0 10px #ffd54f, 0 0 20px #ff9900;
+}
+to{
+text-shadow: 0 0 10px #fff176, 0 0 20px #ffd54f, 0 0 35px #ff9800, 0 0 50px #ff6600;
+}
+}
+
 body{
 background:#b30000;
 display:flex;
@@ -36,11 +45,8 @@ font-size:32px;
 color:#ffd54f;
 margin-bottom:25px;
 font-weight:bold;
-text-shadow:
-0 0 5px #ffd54f,
-0 0 10px #ffd54f,
-0 0 20px #ff9800,
-0 0 40px #ff9800;
+text-shadow: 0 0 5px #ffd54f, 0 0 10px #ffd54f, 0 0 20px #ff9900, 0 0 35px #ff6600;
+animation: glow 1.5s infinite alternate;
 }
 
 .card{
